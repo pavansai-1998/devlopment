@@ -1,30 +1,103 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Web Page</title>
+  <title>Car Travels</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <section id="home">
+    <h1>Welcome to Car Travels</h1>
+    <p>Experience the joy of travel in our comfortable and reliable cars.</p>
+    <a href="#contact" class="cta-button">Book Now</a>
+  </section>
 
-  <section>
-    <h2>About Me</h2>
-    <p>This is a paragraph about me.</p>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading car travel service provider, offering convenient and affordable transportation solutions for individuals and groups.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>City-to-city transfers</li>
+      <li>Airport pickups and drop-offs</li>
+      <li>Sightseeing tours</li>
+      <li>Corporate travel</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>For bookings and inquiries, please fill out the form below or give us a call.</p>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2023 My Web Page. All rights reserved.</p>
+    <p>&copy; 2023 Car Travels. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
